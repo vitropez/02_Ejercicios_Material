@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+
+
+    <title>Ejercicio 2-1</title>
+
+
+
+
+</head>
+
+<body>
+
+<h1> Ejercicio 2-1 </h1>
+
+<script type="text/javascript">
+
+
+    do {
+        dato1 = prompt("Introduce cuantos años tienes:");
+
+        if((dato1 < 1) || (dato1 > 100)||(isNaN(dato1))){
+            alert ("El dato introducido es incorrecto. Introduce de nuevo cuántos años");
+        }
+
+    }
+    while (dato1 < 1 || dato1 > 100 || isNaN(dato1)) ;
+
+    if (dato1 <= 13) {
+        document.write("Tienes " + dato1 + " años, eres muy jovencito");
+
+    } else if (dato1 >= 14 && dato1 < 17) {
+        document.write("Tienes " + dato1 + " años, probablemente seas un adolescente insoportable");
+
+    } else if (dato1 >= 18 && dato1 < 65) {
+        document.write("Tienes " + dato1 + " años, eres mayor de edad");
+    } else {
+
+        document.write("Disfruta de tu jubilación")
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
